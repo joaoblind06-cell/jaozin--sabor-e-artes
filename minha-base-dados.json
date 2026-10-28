@@ -1,0 +1,293 @@
+[
+  {
+    "titulo": "👋 Boas-vindas / Saudação",
+    "keywords": [
+      "oi",
+      "ola",
+      "bom dia",
+      "boa tarde",
+      "boa noite",
+      "ajuda",
+      "menu",
+      "inicio",
+      "comecar"
+    ],
+    "resposta": "Olá! 👋 Seja muito bem-vindo(a) à **Sabor & Arte Confeitaria**!\n\nComo podemos adoçar o seu dia hoje? Clique em um dos botões abaixo ou digite sua dúvida no campo de texto!"
+  },
+  {
+    "titulo": "📜 Cardápio Completo & Lançamentos",
+    "keywords": [
+      "cardapio",
+      "menu",
+      "produtos",
+      "catalogo",
+      "bolos",
+      "doces",
+      "sabores",
+      "opcoes",
+      "novidades",
+      "lancamentos"
+    ],
+    "resposta": "Confira nosso **Cardápio Completo de Delícias**:\n\n🍓 **ESPECIALIDADES DE MORANGO**:\n• **Morango do Amor Gourmet**: R$ 18,00 un (caixa c/ 3 por R$ 50,00)\n• **Coxinha de Morango c/ Brigadeiro**: R$ 15,00 un\n• **Torta de Morango Tradicional**: a partir de R$ 135,00\n• **Taça / Bolo no Pote Ninho & Morango**: R$ 22,00 un\n\n🎂 **BOLOS ARTESANAIS**:\n• **Bolo Red Velvet**: a partir de R$ 120,00\n• **Bolo Personalizado sob Medida**: sob orçamento\n\n🥧 **TORTAS FINAS**:\n• **Torta Banoffee Artesanal**: a partir de R$ 125,00\n• **Torta Holandesa Premium**: a partir de R$ 130,00\n\n🧁 **DOCES & MIMOS**:\n• **Brownie Ninho & Nutella**: a partir de R$ 110,00\n• **Kit Doces Finos (50 un)**: R$ 180,00\n• **Cupcakes Gourmet**: a partir de R$ 75,00 (kit c/ 6)\n• **Pão de Mel Gourmet (caixa 6 un)**: R$ 54,00\n• **Macarons Franceses (12 un)**: R$ 90,00"
+  },
+  {
+    "titulo": "🍓 Morango do Amor & Especialidades",
+    "keywords": [
+      "morango do amor",
+      "morango",
+      "morangos",
+      "espetinho",
+      "coxinha de morango",
+      "casquinha",
+      "calda crocante",
+      "doce de morango"
+    ],
+    "resposta": "Nossas atrações de **Morango Fresco** são sucessos absolutos! 🍓✨\n\n• **Morango do Amor Gourmet**: Morangos gigantes selecionados com calda vermelha super crocante de açúcar cristal ou banhado no chocolate nobre meio amargo/ao leite. (R$ 18,00 un / Kit c/ 3 por R$ 50,00)\n\n• **Coxinha de Morango**: Morango inteiro envolvido por brigadeiro cremoso 50% cacau e confeitos belgas. (R$ 15,00 un)\n\n• **Bolo de Pote Ninho c/ Morango**: Camadas aveludadas de creme de Leite Ninho, pão de ló macio e morangos frescos. (R$ 22,00 un)"
+  },
+  {
+    "titulo": "🥧 Tortas Finas (Banoffee & Holandesa)",
+    "keywords": [
+      "torta",
+      "tortas",
+      "banoffee",
+      "holandesa",
+      "torta de morango",
+      "sobremesa",
+      "tortas geladas"
+    ],
+    "resposta": "Nossas **Tortas Artesanais** encantam qualquer convidado! 🥧✨\n\n• **Torta Banoffee**: Base crocante de biscoito, doce de leite artesanal cozido lentamente, bananas fatiadas e chantilly leve polvilhado com canela em pó. (A partir de R$ 125,00)\n\n• **Torta Holandesa Premium**: Creme holandês aveludado, biscoitos Calipso crocantes na lateral e ganache generosa de chocolate meio amargo. (A partir de R$ 130,00)\n\n• **Torta de Morango**: Creme patissière de baunilha natural e morangos frescos selecionados. (A partir de R$ 135,00)"
+  },
+  {
+    "titulo": "🍯 Pão de Mel & Doces Individuais",
+    "keywords": [
+      "pao de mel",
+      "cupcake",
+      "macaron",
+      "bolo no pote",
+      "doces individuais",
+      "potes",
+      "lembrancinha"
+    ],
+    "resposta": "Perfeitos para dar de presente ou saborear a qualquer hora! 🍯🧁\n\n• **Pão de Mel Gourmet**: Massa fofinha de especiarias e mel puro, recheado com doce de leite cremoso e banhado em chocolate nobre. (Caixa c/ 6 un por R$ 54,00)\n• **Cupcakes Gourmet**: Kit com 6 mini bolos decorados com ganache ou buttercream. (R$ 75,00)\n• **Macarons Franceses**: Caixa premium com 12 unidades em sabores sortidos. (R$ 90,00)\n• **Bolo de Pote / Taça**: Pote individual de 250g super recheado. (R$ 22,00)"
+  },
+  {
+    "titulo": "💰 Preços e Tabela de Valores",
+    "keywords": [
+      "preco",
+      "precos",
+      "valor",
+      "valores",
+      "quanto custa",
+      "custo",
+      "tabela",
+      "orcamento"
+    ],
+    "resposta": "Resumo dos valores base:\n\n🎂 **Bolos por Tamanho**:\n• Tamanho P (10 a 12 fatias): R$ 120,00 a R$ 140,00\n• Tamanho M (20 a 24 fatias): R$ 185,00 a R$ 210,00\n• Tamanho G (30 a 35 fatias): R$ 250,00 a R$ 280,00\n\n🍓 **Doces & Sobremesas**:\n• Morango do Amor: R$ 18,00\n• Coxinha de Morango: R$ 15,00\n• Pão de Mel (kit 6un): R$ 54,00\n• Kit Doces Finos (50un): R$ 180,00\n• Macarons (12un): R$ 90,00"
+  },
+  {
+    "titulo": "📏 Tamanhos e Rendimento de Fatias",
+    "keywords": [
+      "tamanho",
+      "tamanhos",
+      "fatia",
+      "fatias",
+      "pessoas",
+      "rendimento",
+      "kg",
+      "quilo",
+      "servir",
+      "medida",
+      "diametro"
+    ],
+    "resposta": "Guia prático para calcular o bolo perfeito para o seu evento:\n\n• **Tamanho P (15cm de diâmetro)**: Serve de 10 a 12 fatias bem servidas.\n• **Tamanho M (20cm de diâmetro)**: Serve de 20 a 24 fatias.\n• **Tamanho G (25cm de diâmetro)**: Serve de 30 a 35 fatias.\n\n💡 *Dica*: Para festas com mais doces e sobremesas, calcule 1 fatia por convidado. Se o bolo for a atração principal, calcule 1,5 fatia por pessoa."
+  },
+  {
+    "titulo": "🛍️ Pronta Entrega vs. Encomendas",
+    "keywords": [
+      "pronta entrega",
+      "pronta-entrega",
+      "hoje",
+      "agora",
+      "tem no estoque",
+      "disponivel hoje",
+      "loja fisica"
+    ],
+    "resposta": "Temos **produtos a pronta entrega diariamente** na nossa vitrine! 🍰✨\n\n• **Disponíveis na vitrine hoje**: Morango do Amor, Coxinha de Morango, Bolos no Pote, Fatias de Torta Banoffee/Holandesa e Pães de Mel.\n\n• **Bolos inteiros e personalizados**: Necessitam de encomenda prévia para garantirmos o recheio e decoração fresquinhos!"
+  },
+  {
+    "titulo": "💳 Formas de Pagamento & Vale Refeição",
+    "keywords": [
+      "pagamento",
+      "pagar",
+      "pix",
+      "cartao",
+      "credito",
+      "debito",
+      "desconto",
+      "parcelado",
+      "vr",
+      "sodexo",
+      "alelo",
+      "ticket",
+      "refeicao"
+    ],
+    "resposta": "Aceitamos facilitadas formas de pagamento:\n\n✅ **Pix** (com 5% de desconto em encomendas antecipadas)\n✅ **Cartão de Crédito** (em até 3x sem juros)\n✅ **Cartão de Débito**\n✅ **Vale Refeição / Alimentação**: Alelo, Sodexo, Ticket e VR Refeição (para compras presenciais e retiradas)."
+  },
+  {
+    "titulo": "🚚 Entrega, Frete e Regiões Atendidas",
+    "keywords": [
+      "entrega",
+      "entregam",
+      "frete",
+      "taxa",
+      "transporte",
+      "envio",
+      "regiao",
+      "campinas",
+      "bairro",
+      "mora"
+    ],
+    "resposta": "Realizamos entregas com veículos e embalagens refrigeradas em toda a cidade de **Campinas/SP** e cidades vizinhas (Valinhos, Vinhedo, Sumaré e Hortolândia).\n\n🛵 A taxa de frete é calculada de acordo com o CEP de entrega. Consulte no nosso WhatsApp!"
+  },
+  {
+    "titulo": "📍 Endereço e Horário de Funcionamento",
+    "keywords": [
+      "onde",
+      "endereco",
+      "fica",
+      "rua",
+      "local",
+      "retirar",
+      "retirada",
+      "buscar",
+      "loja",
+      "horario",
+      "funciona",
+      "aberto",
+      "fechado"
+    ],
+    "resposta": "Venha nos visitar ou retirar seu pedido! 🎂\n\n📍 **Endereço**: Rua das Camélias, nº 142 — Campinas/SP\n\n⏰ **Horários de Funcionamento**:\n• Segunda a Sexta: 08:30 às 19:00\n• Sábado: 08:30 às 18:00\n• Domingo e Feriados: 09:00 às 13:00 (Apenas retiradas agendadas)"
+  },
+  {
+    "titulo": "📝 Como Fazer Encomenda / Orçamento",
+    "keywords": [
+      "encomenda",
+      "encomendar",
+      "pedido",
+      "pedir",
+      "comprar",
+      "como pedir",
+      "agendar",
+      "orcamento",
+      "formulario"
+    ],
+    "resposta": "Fazer seu pedido é super fácil e rápido!\n\n1. Preencha o **Formulário de Encomendas** na página inicial do site.\n2. Ou clique no botão do **WhatsApp** para conversar diretamente com nossa equipe e personalizar todos os detalhes!"
+  },
+  {
+    "titulo": "⏳ Prazos e Antecedência Recomendada",
+    "keywords": [
+      "prazo",
+      "antecedencia",
+      "urgente",
+      "tempo",
+      "dias",
+      "hoje",
+      "antecipacao",
+      "em cima da hora"
+    ],
+    "resposta": "Prazos recomendados:\n\n• **Bolos Decorados e Kits de Festa**: Pedir com 2 a 3 dias de antecedência.\n• **Bolos de Casamento / Eventos Grandes**: Pedir com 15 a 30 dias de antecedência.\n• **Doces Individuais e Sobremesas**: Pronta entrega na loja ou pedido no mesmo dia (sujeito à disponibilidade)."
+  },
+  {
+    "titulo": "🎨 Bolos Personalizados, Festas e Casamentos",
+    "keywords": [
+      "personalizado",
+      "personalizada",
+      "tema",
+      "tematico",
+      "casamento",
+      "aniversario",
+      "infantil",
+      "topo de bolo",
+      "decoracao",
+      "pasta americana",
+      "chantininho"
+    ],
+    "resposta": "Criamos **Bolos e Doces Temáticos Exclusivos**! 👑✨\n\n• Trabalhamos com cobertura em Chantininho cremoso, Buttercream e detalhes em Pasta Americana ou Topo de Bolo personalizado.\n• Enviamos maquetes e paleta de cores para você aprovar antes da produção!\n• Mande a foto de inspiração do seu tema no nosso WhatsApp."
+  },
+  {
+    "titulo": "🌾 Opções Diet, Sem Lactose ou Veganas",
+    "keywords": [
+      "diet",
+      "vegano",
+      "vegana",
+      "lactose",
+      "zero lactose",
+      "gluten",
+      "sem gluten",
+      "restricao",
+      "acucar",
+      "sem acucar",
+      "fit"
+    ],
+    "resposta": "Atendemos restrições alimentares sob encomenda com muito carinho e sabor! 🌱\n\n• **Linha Zero Lactose**: Bolos e brigadeiros produzidos com leites vegetais e insumos zero lactose.\n• **Linha Zero Açúcar / Diet**: Adoçados com eritritol e xilitol natural.\n• *Atenção*: Nossa cozinha manuseia farinha de trigo, portanto não garantimos ausência total de contaminação cruzada por glúten para celíacos severos."
+  },
+  {
+    "titulo": "❄️ Como Conservar Bolos e Doces",
+    "keywords": [
+      "conservar",
+      "conservacao",
+      "geladeira",
+      "validade",
+      "guardar",
+      "durabilidade",
+      "temperatura",
+      "estragar"
+    ],
+    "resposta": "Dicas de conservação para manter a qualidade artesanal:\n\n• **Bolos com Morangos Frescos ou Banoffee**: Manter refrigerado em geladeira (2°C a 6°C) e consumir em até 2 dias.\n• **Bolos com Chantininho / Cream Cheese**: Retirar da geladeira 20 a 30 minutos antes de servir para resgatar a maciez macia da massa.\n• **Pão de Mel e Macarons**: Conservar em local seco e fresco ao abrigo do sol por até 5 dias."
+  },
+  {
+    "titulo": "🌿 Ingredientes e Diferenciais Artesanais",
+    "keywords": [
+      "artesanal",
+      "qualidade",
+      "ingredientes",
+      "diferencial",
+      "baunilha",
+      "chocolate",
+      "qualidades",
+      "callebaut",
+      "ninho"
+    ],
+    "resposta": "Nosso compromisso é com o **sabor autêntico e inesquecível**:\n\n✨ 100% Livre de essências artificiais e gordura hidrogenada.\n✨ Usamos favas de baunilha natural e cacau puro 70%.\n✨ Chocolates nobres importados (Callebaut) e Leite Ninho original Nestlé.\n✨ Frutas frescas selecionadas diariamente de produtores locais."
+  },
+  {
+    "titulo": "🔄 Alteração ou Cancelamento de Pedido",
+    "keywords": [
+      "cancelar",
+      "cancelamento",
+      "alterar",
+      "mudar",
+      "trocar",
+      "data",
+      "desistir",
+      "reembolso"
+    ],
+    "resposta": "Precisou mudar a data do seu evento? Não se preocupe! 😊\n\n• **Alteração de Data**: Pode ser feita sem custo com até 48h de antecedência.\n• **Cancelamento**: Reembolso integral para avisos com até 72h de antecedência. Para prazos menores, consulte as condições com nosso suporte via WhatsApp."
+  },
+  {
+    "titulo": "💬 Falar com Atendente no WhatsApp",
+    "keywords": [
+      "atendente",
+      "humano",
+      "contato",
+      "whatsapp",
+      "telefone",
+      "falar",
+      "suporte",
+      "conversar",
+      "ligar",
+      "atendimento"
+    ],
+    "resposta": "Deseja um atendimento personalizado em tempo real?\n\nClique no botão verde no canto da tela ou nos chame no **WhatsApp: (19) 99999-9999**. Nossa equipe está pronta para te atender!"
+  }
+]
