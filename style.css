@@ -1,3 +1,6 @@
+/* =========================================================
+   1. SELETOR UNIVERSAL (*) E VARIÁVEIS DE IDENTIDADE VISUAL
+   ========================================================= */
 :root {
   --fundo: #FFF8F6;
   --card: #FFFFFF;
@@ -24,28 +27,50 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif;
   background-color: var(--fundo);
   color: var(--texto);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
+/* =========================================================
+   2. SELETORES AGRUPADOS / COMPARTILHADOS
+   ========================================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--texto);
+  line-height: 1.25;
+}
+
+/* =========================================================
+   3. SELETORES DE CLASSE (.) E BOX MODEL
+   ========================================================= */
 .container {
   width: 92%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+.logo {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--texto);
+}
+
 .text-gradient {
   background: var(--gradiente-rosa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* =========================================================
+   4. HEADER, MENU E SUBMENU (:hover e :focus-within)
+   ========================================================= */
 header {
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--borda);
   padding: 1.1rem 0;
   position: sticky;
@@ -62,10 +87,11 @@ header {
   gap: 1rem;
 }
 
-nav ul {
+nav ul.menu-principal {
   display: flex;
   list-style: none;
   gap: 1.4rem;
+  align-items: center;
 }
 
 nav a {
@@ -73,27 +99,113 @@ nav a {
   color: var(--texto);
   font-weight: 700;
   font-size: 0.95rem;
-  transition: color 0.25s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  display: inline-block;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: var(--primaria);
+  background-color: #FDF0ED;
+  outline: none;
 }
 
+nav a:active {
+  transform: scale(0.97);
+}
+
+/* Submenu Encadeado */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  background-color: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  box-shadow: var(--sombra-card);
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;
+  z-index: 200;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+/* =========================================================
+   5. HERO SECTION COM IMAGEM DE FUNDO (BACKGROUND)
+   ========================================================= */
 .hero {
-  background: linear-gradient(135deg, #FDF0ED 0%, #FFF3EA 100%);
-  padding: 4.8rem 1rem;
+  position: relative;
+  background-color: #FDF0ED;
+  background-image: url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  padding: 5.5rem 1rem;
   text-align: center;
   border-bottom: 1px solid var(--borda);
 }
 
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 248, 246, 0.88);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 1px solid var(--borda);
+  color: var(--primaria);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 .hero h1 {
   font-size: 2.8rem;
-  color: var(--texto);
   margin-bottom: 1rem;
   font-weight: 800;
 }
 
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 1.8rem auto;
+  font-size: 1.05rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Botões e Estados Interativos */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -102,7 +214,7 @@ nav a:hover {
   text-decoration: none;
   border-radius: 30px;
   font-weight: 700;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -112,11 +224,35 @@ nav a:hover {
   color: #ffffff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(216, 90, 127, 0.45);
 }
 
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  background-color: #FFFFFF;
+  color: var(--primaria);
+  border-color: var(--primaria);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: var(--primaria);
+  color: #FFFFFF;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* =========================================================
+   6. SEÇÕES, CARDS E CARROSSEL
+   ========================================================= */
 section {
   padding: 3.8rem 0;
 }
@@ -128,13 +264,12 @@ section {
 
 .titulo-secao h2 {
   font-size: 2.1rem;
-  color: var(--texto);
   font-weight: 800;
 }
 
 .subtitulo-secao {
   font-size: 0.95rem;
-  color: #777;
+  color: #5C4D47;
   margin-top: 0.4rem;
 }
 
@@ -188,6 +323,13 @@ section {
   box-shadow: var(--sombra-card);
 }
 
+.preco {
+  margin-top: 0.8rem;
+  font-weight: 800;
+  color: var(--primaria);
+  font-size: 1.1rem;
+}
+
 .card-badge {
   position: absolute;
   top: 15px;
@@ -201,7 +343,7 @@ section {
   z-index: 10;
 }
 
-.card-badge.destaque { background: var(--destaque); }
+.card-badge.destaque { background: var(--destaque); color: #2D1E18; }
 .card-badge.morango { background: var(--gradiente-morango); }
 
 figure.flip-card {
@@ -285,12 +427,60 @@ figure.flip-card:hover .flip-card-inner {
   z-index: 20;
 }
 
-.carrossel-btn.btn-prev { left: -20px; }
-.carrossel-btn.btn-next { right: -20px; }
+.carrossel-btn.btn-prev { left: -15px; }
+.carrossel-btn.btn-next { right: -15px; }
 
+/* =========================================================
+   7. SEÇÃO COMO FUNCIONA (CENTRALIZADA E ALINHADA)
+   ========================================================= */
+.como-funciona-secao {
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+}
+
+.passos-card {
+  background-color: var(--fundo);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 2.3rem 2.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: var(--sombra-card);
+}
+
+.passos-card h4 {
+  font-size: 1.45rem;
+  margin-bottom: 0.25rem;
+}
+
+.passos-card h5 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--primaria);
+  margin-bottom: 1.3rem;
+  font-size: 0.95rem;
+}
+
+.passos-card h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #5C4D47;
+  margin-top: 1.3rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.lista-ordenada {
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* =========================================================
+   8. GALERIA E LIGHTBOX
+   ========================================================= */
 .galeria-secao {
   background-color: #FFF3F0;
-  border-top: 1px solid var(--borda);
   border-bottom: 1px solid var(--borda);
 }
 
@@ -310,8 +500,10 @@ figure.flip-card:hover .flip-card-inner {
   border-radius: 20px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 
+.filtro-btn:hover,
 .filtro-btn.active {
   background: var(--gradiente-rosa);
   color: #ffffff;
@@ -410,6 +602,9 @@ figure.flip-card:hover .flip-card-inner {
   cursor: pointer;
 }
 
+/* =========================================================
+   9. TABELA E FORMULÁRIO (SELETOR DE ID #form-encomenda)
+   ========================================================= */
 .tabela-wrapper {
   overflow-x: auto;
   border-radius: 14px;
@@ -434,7 +629,7 @@ th {
   font-weight: 800;
 }
 
-form.form-encomenda {
+#form-encomenda {
   background-color: var(--card);
   padding: 2.3rem;
   border-radius: 16px;
@@ -454,15 +649,53 @@ form.form-encomenda {
   font-weight: 700;
 }
 
-.campo input, .campo select, .campo textarea {
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="file"],
+.campo select,
+.campo textarea {
   width: 100%;
   padding: 0.85rem;
   border: 1px solid var(--borda);
   border-radius: 8px;
   font-size: 0.95rem;
   font-family: inherit;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--primaria);
+  box-shadow: 0 0 0 3px rgba(216, 90, 127, 0.15);
+}
+
+.dica-campo {
+  color: #5C4D47;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.grupo-opcoes {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.label-inline {
+  font-weight: 400 !important;
+  cursor: pointer;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+/* =========================================================
+   10. ELEMENTOS FIXOS, FOOTER E RESPONSIVIDADE
+   ========================================================= */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -478,6 +711,7 @@ form.form-encomenda {
   font-size: 2rem;
   text-decoration: none;
   z-index: 999;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
 }
 
 .back-to-top {
@@ -511,19 +745,49 @@ footer {
   margin-top: 3.5rem;
 }
 
+.footer-dl-wrapper {
+  max-width: 400px;
+  margin: 1.5rem auto;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.footer-dl-wrapper dt {
+  font-weight: 700;
+  color: var(--destaque);
+  margin-top: 0.5rem;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: var(--destaque);
+  text-decoration: none;
+  margin: 0 8px;
+}
+
 .banner-cookies {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(45, 30, 24, 0.95);
+  background: rgba(45, 30, 24, 0.96);
   border-top: 3px solid var(--primaria);
   color: #ffffff;
   padding: 16px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   z-index: 9999;
+}
+
+.btn-group-cookies {
+  display: flex;
+  gap: 10px;
 }
 
 .btn-cookies {
@@ -541,11 +805,15 @@ footer {
   border: 1px solid #ffffff;
 }
 
+/* Media Queries para Tablet e Smartphone */
 @media (max-width: 900px) {
   .carrossel-item { flex: 0 0 calc(50% - 0.75rem); }
 }
 
 @media (max-width: 650px) {
   .header-flex { flex-direction: column; text-align: center; }
+  nav ul.menu-principal { flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
+  .hero h1 { font-size: 2.1rem; }
   .carrossel-item { flex: 0 0 100%; }
+  .passos-card { padding: 1.6rem 1.4rem; }
 }

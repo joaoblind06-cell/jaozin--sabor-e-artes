@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
+  <!-- Metadados obrigatórios e configuração de codificação/viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabor & Arte - Confeitaria Artesanal Premium em Campinas/SP. Bolos festivos, Morango do Amor, tortas finas e encomendas sob medida.">
   <title>Sabor & Arte | Confeitaria Artesanal Premium</title>
+  
+  <!-- Fontes Externas (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
   <!-- Vinculação do CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- CABEÇALHO GLASSMORPHISM -->
-  <header>
+  <!-- =========================================================
+       SEÇÃO 1: CABEÇALHO E MENU COM SUBMENU ENCADEADO
+       ========================================================= -->
+  <header id="topo">
     <div class="container header-flex">
-      <div class="logo">🎂 <span class="text-gradient">Sabor & Arte</span></div>
+      <a href="index.html" class="logo">🎂 <span class="text-gradient">Sabor & Arte</span></a>
+      
       <nav aria-label="Menu Principal">
-        <ul>
+        <ul class="menu-principal">
           <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#tabela">Tamanhos</a></li>
+          <li class="has-submenu">
+            <a href="#cardapio" aria-haspopup="true">Cardápio ▾</a>
+            <!-- Lista encadeada para submenu funcional -->
+            <ul class="submenu">
+              <li><a href="#cardapio">Morangos Gourmet</a></li>
+              <li><a href="#cardapio">Bolos Artesanais</a></li>
+              <li><a href="#galeria">Galeria de Fotos</a></li>
+              <li><a href="#tabela">Tabela de Tamanhos</a></li>
+            </ul>
+          </li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
           <li><a href="#encomenda">Encomendas</a></li>
+          <!-- Link para página local (.html) -->
+          <li><a href="sobre.html">Nossa História</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- =========================================================
+       SEÇÃO 2: CONTEÚDO PRINCIPAL (MAIN)
+       ========================================================= -->
   <main>
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION COM IMAGEM DE FUNDO (BACKGROUND) -->
     <section class="hero">
+      <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
         <span class="hero-badge">✨ Confeitaria Gourmet & Encomendas Especiais</span>
         <h1>Bolos & Doces <span class="text-gradient">Artesanais</span></h1>
-        <p>Ingredientes nobres selecionados e produção sob medida para transformar aniversários, casamentos e momentos
-          especiais em memórias inesquecíveis.</p>
+        <p>Ingredientes nobres selecionados e produção <strong>100% sob medida</strong> para transformar aniversários, casamentos e momentos especiais em <em>memórias inesquecíveis</em>.</p>
         <div class="hero-buttons">
-          <a href="#encomenda" class="btn btn-primary btn-glow">💬 Fazer Orçamento no WhatsApp</a>
-          <a href="#galeria" class="btn btn-outline">📸 Explorar Galeria Premium</a>
+          <a href="#encomenda" class="btn btn-primary btn-glow">💬 Fazer Orçamento Agora</a>
+          <!-- Link com atributo download -->
+          <a href="catalogo-sabor-arte.txt" download="Catalogo-Sabor-e-Arte-2026.txt" class="btn btn-outline">📥 Baixar Catálogo Completo</a>
         </div>
       </div>
     </section>
@@ -54,23 +79,21 @@
             <div class="card-icon">🌿</div>
           </div>
           <h3>100% Artesanal</h3>
-          <p>Sem essências artificiais nem misturas prontas. Usamos favas de baunilha natural e chocolates nobres
-            importados.</p>
+          <p>Sem essências artificiais nem misturas prontas. Usamos <strong>favas de baunilha natural</strong> e chocolates nobres importados.</p>
         </article>
         <article class="reveal hover-card">
           <div class="card-icon-wrapper">
             <div class="card-icon">🍓</div>
           </div>
           <h3>Frutas Selecionadas</h3>
-          <p>Morangos frescos e frutas de produtores locais selecionadas diariamente para nossas sobremesas e
-            espetinhos.</p>
+          <p>Morangos frescos e frutas de produtores locais selecionadas <em>diariamente</em> para nossas sobremesas e espetinhos.</p>
         </article>
         <article class="reveal hover-card">
           <div class="card-icon-wrapper">
             <div class="card-icon">🛵</div>
           </div>
           <h3>Entrega Refrigerada</h3>
-          <p>Veículos e embalagens especiais para garantir que seu pedido chegue geladinho e impecável ao seu evento.</p>
+          <p>Veículos e embalagens especiais para garantir que seu pedido chegue <strong>geladinho e impecável</strong> ao seu evento.</p>
         </article>
       </div>
     </section>
@@ -83,19 +106,19 @@
       </div>
 
       <div class="carrossel-container reveal">
-        <button class="carrossel-btn btn-prev" id="btn-prev" aria-label="Anterior">&#10094;</button>
+        <button class="carrossel-btn btn-prev" id="btn-prev" aria-label="Produto Anterior">&#10094;</button>
 
         <div class="carrossel-overflow">
           <div class="carrossel-track" id="carrossel-track">
 
-            <!-- ITEM 1: MORANGO DO AMOR -->
+            <!-- ITEM 1 -->
             <div class="carrossel-item">
               <article class="card-produto">
                 <span class="card-badge morango">🔥 Lançamento</span>
                 <figure class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&auto=format&fit=crop" alt="Morango do Amor Gourmet">
+                      <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&auto=format&fit=crop" alt="Morango do Amor Gourmet com calda crocante">
                     </div>
                     <div class="flip-card-back">
                       <span>🍓 Receita Exclusiva</span>
@@ -109,14 +132,14 @@
               </article>
             </div>
 
-            <!-- ITEM 2: COXINHA DE MORANGO -->
+            <!-- ITEM 2 -->
             <div class="carrossel-item">
               <article class="card-produto">
                 <span class="card-badge morango">🍓 Sucesso</span>
                 <figure class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&auto=format&fit=crop" alt="Coxinha de Morango">
+                      <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&auto=format&fit=crop" alt="Coxinha de Morango com brigadeiro gourmet">
                     </div>
                     <div class="flip-card-back">
                       <span>🍫 Brigadeiro Gourmet</span>
@@ -130,14 +153,14 @@
               </article>
             </div>
 
-            <!-- ITEM 3: CHEESECAKE DE FRUTAS VERMELHAS -->
+            <!-- ITEM 3 -->
             <div class="carrossel-item">
               <article class="card-produto">
                 <span class="card-badge destaque">🍰 Especialidade</span>
                 <figure class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&auto=format&fit=crop" alt="Cheesecake de Frutas Vermelhas">
+                      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&auto=format&fit=crop" alt="Cheesecake de Frutas Vermelhas artesanal">
                     </div>
                     <div class="flip-card-back">
                       <span>🍓 Calda Artesanal</span>
@@ -151,14 +174,14 @@
               </article>
             </div>
 
-            <!-- ITEM 4: BOLO RED VELVET -->
+            <!-- ITEM 4 -->
             <div class="carrossel-item">
               <article class="card-produto">
                 <span class="card-badge">Mais Pedido</span>
                 <figure class="flip-card">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop" alt="Bolo Red Velvet">
+                      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop" alt="Bolo Red Velvet recheado com cream cheese">
                     </div>
                     <div class="flip-card-back">
                       <span>✨ Clássico Americano</span>
@@ -175,8 +198,30 @@
           </div>
         </div>
 
-        <button class="carrossel-btn btn-next" id="btn-next" aria-label="Próximo">&#10095;</button>
-        <div class="carrossel-indicadores" id="carrossel-indicadores"></div>
+        <button class="carrossel-btn btn-next" id="btn-next" aria-label="Próximo Produto">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA (ALINHADA E CENTRALIZADA COM LISTA ORDENADA <ol>) -->
+    <section id="como-funciona" class="como-funciona-secao">
+      <div class="container">
+        <div class="titulo-secao reveal">
+          <h2>Como Funciona sua Encomenda</h2>
+          <p class="subtitulo-secao">Simples, rápido e personalizado em apenas 4 passos</p>
+        </div>
+
+        <div class="passos-card reveal">
+          <h4>Passo a Passo do Atendimento</h4>
+          <h5>Do orçamento à entrega refrigerada</h5>
+          <!-- Lista Ordenada (<ol>) obrigatória -->
+          <ol class="lista-ordenada">
+            <li><strong>Escolha o Sabor e Tamanho:</strong> Consulte nosso cardápio em destaque e a tabela de rendimento abaixo.</li>
+            <li><strong>Preencha o Formulário:</strong> Informe a data do evento, adicionais desejados e anexe uma foto de inspiração.</li>
+            <li><strong>Confirmação via WhatsApp:</strong> Nossa equipe valida a disponibilidade da agenda e envia o resumo com link de pagamento.</li>
+            <li><strong>Entrega ou Retirada:</strong> Receba no conforto de casa em transporte refrigerado ou retire diretamente na loja.</li>
+          </ol>
+          <h6>* Recomendamos antecedência mínima de 48h para bolos decorados e kits de festa.</h6>
+        </div>
       </div>
     </section>
 
@@ -188,34 +233,32 @@
           <p class="subtitulo-secao">Filtre por categoria e clique em qualquer foto para ampliar!</p>
         </div>
 
-        <!-- ABAS DE FILTRO INTERATIVAS -->
         <div class="galeria-filtros reveal">
-          <button class="filtro-btn active" data-filter="todos">Todos</button>
-          <button class="filtro-btn" data-filter="especiais">Morangos & Especialidades</button>
-          <button class="filtro-btn" data-filter="bolos">Bolos</button>
-          <button class="filtro-btn" data-filter="tortas">Tortas</button>
+          <button type="button" class="filtro-btn active" data-filter="todos">Todos</button>
+          <button type="button" class="filtro-btn" data-filter="especiais">Morangos & Especialidades</button>
+          <button type="button" class="filtro-btn" data-filter="bolos">Bolos</button>
+          <button type="button" class="filtro-btn" data-filter="tortas">Tortas</button>
         </div>
 
-        <!-- GRID DA GALERIA COM CATEGORIAS DISTINTAS -->
         <div class="galeria-grid reveal" id="galeria-grid">
           <div class="gallery-item" data-category="especiais"
             data-src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1000&auto=format&fit=crop"
             data-caption="Morango do Amor Gourmet Crocante de Açúcar Cristal Vermelho">
-            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&auto=format&fit=crop" alt="Morango do Amor">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&auto=format&fit=crop" alt="Morango do Amor Gourmet">
             <div class="gallery-overlay"><span class="gallery-icon">🔍 Ampliar Foto</span></div>
           </div>
 
           <div class="gallery-item" data-category="tortas"
             data-src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1000&auto=format&fit=crop"
             data-caption="Cheesecake de Frutas Vermelhas com Calda Artesanal">
-            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&auto=format&fit=crop" alt="Cheesecake">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&auto=format&fit=crop" alt="Cheesecake de Frutas Vermelhas">
             <div class="gallery-overlay"><span class="gallery-icon">🔍 Ampliar Foto</span></div>
           </div>
 
           <div class="gallery-item" data-category="bolos"
             data-src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=1000&auto=format&fit=crop"
             data-caption="Bolo Festivo Decorado Artesanalmente">
-            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=500&auto=format&fit=crop" alt="Bolo Decorado">
+            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=500&auto=format&fit=crop" alt="Bolo Festivo Decorado">
             <div class="gallery-overlay"><span class="gallery-icon">🔍 Ampliar Foto</span></div>
           </div>
 
@@ -236,7 +279,7 @@
           <div class="gallery-item" data-category="tortas"
             data-src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1000&auto=format&fit=crop"
             data-caption="Torta Holandesa Premium com Cobertura de Ganache">
-            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&auto=format&fit=crop" alt="Torta Holandesa">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&auto=format&fit=crop" alt="Torta Holandesa Premium">
             <div class="gallery-overlay"><span class="gallery-icon">🔍 Ampliar Foto</span></div>
           </div>
         </div>
@@ -245,13 +288,11 @@
 
     <!-- MODAL LIGHTBOX PARA A GALERIA -->
     <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-hidden="true">
-      <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">&times;</button>
-      <button id="lightbox-prev" class="lightbox-nav lightbox-prev-btn" aria-label="Anterior">&#10094;</button>
+      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Fechar">&times;</button>
       <div class="lightbox-container">
-        <img id="lightbox-img" src="" alt="Imagem Ampliada">
+        <img id="lightbox-img" src="" alt="Imagem Ampliada da Galeria">
         <p id="lightbox-caption" class="lightbox-caption"></p>
       </div>
-      <button id="lightbox-next" class="lightbox-nav lightbox-next-btn" aria-label="Próximo">&#10095;</button>
     </div>
 
     <!-- TABELA SEMÂNTICA COM MESCLAGEM (COLSPAN / ROWSPAN) -->
@@ -297,27 +338,33 @@
       </div>
     </section>
 
-    <!-- FORMULÁRIO COMPLETO -->
+    <!-- FORMULÁRIO COMPLETO COM VALIDAÇÃO REGEX E ALINHAMENTO COM O BANCO DE DADOS -->
     <section id="encomenda" class="container">
       <div class="titulo-secao reveal">
         <h2>Faça sua Encomenda</h2>
         <p class="subtitulo-secao">Preencha os dados e você será redirecionado para o WhatsApp com o pedido montado!</p>
       </div>
-      <form id="form-encomenda" class="form-encomenda reveal" action="https://api.whatsapp.com/send" method="POST">
+      <form id="form-encomenda" class="form-encomenda reveal" action="https://api.whatsapp.com/send" method="POST" enctype="multipart/form-data">
         <div class="campo">
           <label for="nome">Nome Completo:</label>
-          <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo">
+          <input type="text" id="nome" name="nome_cliente" required minlength="3" maxlength="100" placeholder="Digite seu nome completo">
         </div>
 
         <div class="campo">
           <label for="whatsapp">WhatsApp para contato (com DDD):</label>
-          <input type="tel" id="whatsapp" name="whatsapp" required pattern="^\(\d{2}\)\s?\d{5}-\d{4}$" placeholder="(19) 99999-9999">
-          <small style="color: #777; font-size: 0.8rem;">Formato exigido: (19) 99999-9999</small>
+          <input type="tel" id="whatsapp" name="telefone_whatsapp" required maxlength="15" pattern="^\(\d{2}\)\s?\d{5}-\d{4}$" placeholder="(19) 99999-9999">
+          <small class="dica-campo">Formato exigido: (19) 99999-9999</small>
+        </div>
+
+        <div class="campo">
+          <label for="cep">CEP para cálculo de entrega (Opcional):</label>
+          <input type="text" id="cep" name="cep_entrega" maxlength="9" pattern="^\d{5}-\d{3}$" placeholder="13000-000">
+          <small class="dica-campo">Formato: 00000-000</small>
         </div>
 
         <div class="campo">
           <label for="produto">Produto Desejado:</label>
-          <select id="produto" name="produto" required>
+          <select id="produto" name="produto_id" required>
             <option value="">Selecione a opção...</option>
             <option value="Morango do Amor Gourmet">🍓 Morango do Amor Gourmet (R$ 18,00)</option>
             <option value="Coxinha de Morango">🍓 Coxinha de Morango (R$ 15,00)</option>
@@ -329,29 +376,29 @@
 
         <div class="campo">
           <label>Tipo de Retirada / Entrega:</label>
-          <div style="display: flex; gap: 1.5rem; margin-top: 0.4rem;">
-            <label style="font-weight: normal; cursor: pointer;"><input type="radio" name="tipo_entrega" value="retirada" checked> Retirada na Loja</label>
-            <label style="font-weight: normal; cursor: pointer;"><input type="radio" name="tipo_entrega" value="entrega"> Entrega Refrigerada (Delivery)</label>
+          <div class="grupo-opcoes">
+            <label class="label-inline"><input type="radio" name="tipo_entrega" value="retirada" checked> Retirada na Loja</label>
+            <label class="label-inline"><input type="radio" name="tipo_entrega" value="entrega"> Entrega Refrigerada (Delivery)</label>
           </div>
         </div>
 
         <div class="campo">
           <label>Adicionais e Embalagens:</label>
-          <div style="display: flex; gap: 1.5rem; margin-top: 0.4rem; flex-wrap: wrap;">
-            <label style="font-weight: normal; cursor: pointer;"><input type="checkbox" name="adicional" value="vela"> Vela de Aniversário</label>
-            <label style="font-weight: normal; cursor: pointer;"><input type="checkbox" name="adicional" value="cartao"> Cartão de Mensagem</label>
-            <label style="font-weight: normal; cursor: pointer;"><input type="checkbox" name="adicional" value="laco"> Embalagem para Presente</label>
+          <div class="grupo-opcoes">
+            <label class="label-inline"><input type="checkbox" name="adicionais" value="Vela de Aniversário"> Vela de Aniversário</label>
+            <label class="label-inline"><input type="checkbox" name="adicionais" value="Cartão de Mensagem"> Cartão de Mensagem</label>
+            <label class="label-inline"><input type="checkbox" name="adicionais" value="Embalagem para Presente"> Embalagem para Presente</label>
           </div>
         </div>
 
         <div class="campo">
           <label for="comprovante">Anexar Foto de Inspiração ou Referência (Opcional):</label>
-          <input type="file" id="comprovante" name="comprovante" accept="image/*">
+          <input type="file" id="comprovante" name="foto_referencia" accept="image/*">
         </div>
 
         <div class="campo">
           <label for="obs">Detalhes e Data do Evento:</label>
-          <textarea id="obs" name="obs" rows="3" placeholder="Ex: Para o dia 15/10, tema floral..."></textarea>
+          <textarea id="obs" name="observacoes" rows="3" maxlength="500" placeholder="Ex: Para o dia 15/10, tema floral..."></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary btn-full btn-glow">🚀 Enviar Pedido pelo WhatsApp</button>
@@ -359,38 +406,50 @@
     </section>
   </main>
 
-  <button id="btn-back-to-top" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+  <!-- BOTÕES FLUTUANTES -->
+  <button type="button" id="btn-back-to-top" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
   <a href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Conversar no WhatsApp">
     <span>💬</span>
   </a>
 
+  <!-- =========================================================
+       SEÇÃO 3: RODAPÉ (FOOTER) COM LISTA DE DEFINIÇÃO (<dl>)
+       ========================================================= -->
   <footer>
     <div class="container">
       <p><strong>Sabor & Arte Confeitaria Artesanal</strong></p>
       <p>📍 Rua das Camélias, 142 — Campinas/SP | 📞 (19) 99999-9999</p>
       
-      <div style="max-width: 400px; margin: 1.5rem auto; text-align: left; font-size: 0.85rem;">
+      <div class="footer-dl-wrapper">
         <dl>
-          <dt style="font-weight: bold; color: var(--destaque);">Atendimento Telefônico:</dt>
+          <dt>Atendimento Telefônico:</dt>
           <dd>Segunda a Sábado das 09h às 18h</dd>
-          <dt style="font-weight: bold; color: var(--destaque); margin-top: 0.5rem;">E-mail Corporativo:</dt>
+          <dt>E-mail Corporativo:</dt>
           <dd>contato@saborarteconfeitaria.com.br</dd>
         </dl>
       </div>
+
+      <p class="footer-links">
+        <a href="sobre.html">Sobre Nós</a> | 
+        <a href="#topo">Voltar ao Topo</a> | 
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram Oficial</a>
+      </p>
 
       <p>&copy; 2026 - Confeitaria Artesanal Premium Sabor & Arte.</p>
     </div>
   </footer>
 
+  <!-- BANNER DE COOKIES -->
   <div id="banner-cookies" class="banner-cookies">
     <p>Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.</p>
     <div class="btn-group-cookies">
-      <button id="btn-recusar-cookies" class="btn-cookies btn-recusar">Recusar</button>
-      <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
+      <button type="button" id="btn-recusar-cookies" class="btn-cookies btn-recusar">Recusar</button>
+      <button type="button" id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
     </div>
   </div>
 
+  <!-- SCRIPTS EXTERNOS E INTERNOS -->
   <script src="cookies.js" defer></script>
   <script src="chatbot.js"></script>
 
@@ -415,9 +474,10 @@
         }
         btnNext.addEventListener('click', () => moverParaIndex(currentIndex >= getMaxIndex() ? 0 : currentIndex + 1));
         btnPrev.addEventListener('click', () => moverParaIndex(currentIndex <= 0 ? getMaxIndex() : currentIndex - 1));
+        window.addEventListener('resize', () => moverParaIndex(currentIndex));
       }
 
-      /* 2. FILTRO DA GALERIA (CORRIGIDO E OTIMIZADO) */
+      /* 2. FILTRO DA GALERIA */
       const filtroBtns = document.querySelectorAll('.filtro-btn');
       const galleryItems = document.querySelectorAll('.gallery-item');
 
@@ -431,7 +491,6 @@
 
             galleryItems.forEach(item => {
               const category = item.getAttribute('data-category');
-
               if (filterValue === 'todos' || category === filterValue) {
                 item.style.display = 'block';
                 setTimeout(() => {
@@ -462,40 +521,80 @@
             lightboxImg.src = item.getAttribute('data-src');
             lightboxCaption.textContent = item.getAttribute('data-caption');
             lightboxModal.classList.add('ativo');
+            lightboxModal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
           });
         });
 
-        if (lightboxClose) {
-          lightboxClose.addEventListener('click', () => {
-            lightboxModal.classList.remove('ativo');
-            document.body.style.overflow = '';
-          });
-        }
+        const fecharLightbox = () => {
+          lightboxModal.classList.remove('ativo');
+          lightboxModal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        };
 
+        if (lightboxClose) lightboxClose.addEventListener('click', fecharLightbox);
         lightboxModal.addEventListener('click', (e) => {
-          if (e.target === lightboxModal) {
-            lightboxModal.classList.remove('ativo');
-            document.body.style.overflow = '';
-          }
+          if (e.target === lightboxModal) fecharLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && lightboxModal.classList.contains('ativo')) fecharLightbox();
         });
       }
 
-      /* 4. ENVIO DE ENCOMENDA WHATSAPP */
+      /* 4. MÁSCARA AUTOMÁTICA PARA TELEFONE E CEP */
+      const inputWpp = document.getElementById('whatsapp');
+      if (inputWpp) {
+        inputWpp.addEventListener('input', (e) => {
+          let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+          if (v.length > 6) {
+            v = `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+          } else if (v.length > 2) {
+            v = `(${v.slice(0, 2)}) ${v.slice(2)}`;
+          } else if (v.length > 0) {
+            v = `(${v}`;
+          }
+          e.target.value = v;
+        });
+      }
+
+      const inputCep = document.getElementById('cep');
+      if (inputCep) {
+        inputCep.addEventListener('input', (e) => {
+          let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+          if (v.length > 5) v = `${v.slice(0, 5)}-${v.slice(5)}`;
+          e.target.value = v;
+        });
+      }
+
+      /* 5. ENVIO DE ENCOMENDA WHATSAPP COMPLETO */
       const formEncomenda = document.getElementById('form-encomenda');
       if (formEncomenda) {
         formEncomenda.addEventListener('submit', (e) => {
           e.preventDefault();
           const nome = document.getElementById('nome').value;
           const whatsapp = document.getElementById('whatsapp').value;
+          const cep = document.getElementById('cep').value;
           const produto = document.getElementById('produto').value;
+          const entrega = document.querySelector('input[name="tipo_entrega"]:checked').value;
+          const adicionaisMarcados = Array.from(document.querySelectorAll('input[name="adicionais"]:checked')).map(el => el.value);
           const obs = document.getElementById('obs').value;
-          const mensagem = `*Novo Pedido - Sabor & Arte*%0A%0A👤 *Nome:* ${encodeURIComponent(nome)}%0A📱 *WhatsApp:* ${encodeURIComponent(whatsapp)}%0A🎂 *Produto:* ${encodeURIComponent(produto)}%0A📝 *Obs:* ${encodeURIComponent(obs || 'Nenhuma')}`;
-          window.open(`https://wa.me/5519999999999?text=${mensagem}`, '_blank');
+
+          const textoAdicionais = adicionaisMarcados.length > 0 ? adicionaisMarcados.join(', ') : 'Nenhum';
+          const textoEntrega = entrega === 'entrega' ? `Entrega Refrigerada (CEP: ${cep || 'A informar'})` : 'Retirada na Loja';
+
+          const mensagem = `*Novo Pedido - Sabor & Arte*%0A%0A` +
+            `👤 *Nome:* ${encodeURIComponent(nome)}%0A` +
+            `📱 *WhatsApp:* ${encodeURIComponent(whatsapp)}%0A` +
+            `🎂 *Produto:* ${encodeURIComponent(produto)}%0A` +
+            `🛵 *Modalidade:* ${encodeURIComponent(textoEntrega)}%0A` +
+            `🎁 *Adicionais:* ${encodeURIComponent(textoAdicionais)}%0A` +
+            `📝 *Obs:* ${encodeURIComponent(obs || 'Nenhuma')}`;
+
+          window.open(`https://wa.me/5519999999999?text=${mensagem}`, '_blank', 'noopener,noreferrer');
         });
       }
 
-      /* 5. BOTÃO VOLTAR AO TOPO */
+      /* 6. BOTÃO VOLTAR AO TOPO */
       const btnBackToTop = document.getElementById('btn-back-to-top');
       if (btnBackToTop) {
         window.addEventListener('scroll', () => btnBackToTop.classList.toggle('visible', window.scrollY > 400));
